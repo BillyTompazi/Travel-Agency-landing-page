@@ -1,0 +1,375 @@
+html,
+body {
+    position: fixed;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    margin: 0;
+    padding: 0;
+    height: 100%;
+}
+
+body {
+    background-image: url("images/background3.jpg");
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-position: center;
+    animation: fadein 2s;
+}
+
+.sidenav {
+    height: 100%;
+    width: 220px;
+    position: fixed;
+    z-index: 1;
+    top: 0;
+    right: 0;
+    overflow-x: hidden;
+    padding-top: 20px;
+    background-image: url('images/side-nav.png');
+    background-size: cover;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    animation: fadeBounce 3s;
+}
+
+.nav-bar {
+    width: 80%;
+    position: relative;
+    left: -125px;
+    display: flex;
+    color: #ffffff;
+    justify-content: space-between;
+}
+
+.logo {
+    display: flex;
+    color: #ffffff;
+    font-family: Source Serif Pro;
+    font-size: 24px;
+    font-weight: 600;
+    padding: 20px;
+    align-items: baseline;
+}
+
+.nav-link {
+    font-family: Open Sans;
+    color: #ffffff;
+    font-size: 16px;
+    display: flex;
+    align-items: baseline;
+    font-weight: 200;
+}
+
+.nav-link.email {
+    text-decoration: underline;
+}
+
+.book-now {
+    width: 150px;
+    height: 45px;
+    border-radius: 29px;
+    background-color: #ffa70f;
+    color: #ffffff;
+    font-size: 18px;
+    font-weight: 600;
+    border: none;
+    box-shadow: 0px 0.5px 6px 0.5px rgba(0, 0, 0, 0.30);
+    position: relative;
+    margin-top: 15px;
+    margin-bottom: 60px;
+}
+
+.sidenav-link {
+    font-family: Open Sans;
+    color: #ffffff;
+    font-weight: 200;
+    font-size: 16px;
+    text-shadow: 0px 1.5px 5px #515151;
+    margin-top: 35px;
+}
+
+.icon {
+    width: 15%;
+}
+
+.stories-link {
+    margin-bottom: 60px;
+}
+
+.social-link {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-top: 30px;
+}
+
+.main-content {
+    left: -84px;
+    position: relative;
+    width: 80%;
+    display: flex;
+    top: 24px;
+    flex-direction: column;
+    align-items: flex-start;
+}
+
+.island-hopping {
+    background-color: rgba(255, 255, 255, 0.22);
+    color: #ffffff;
+    font-family: Open Sans;
+    margin-left: 23px;
+    padding: 10px;
+    border-top: - none;
+    border-style: none;
+    border-radius: 0;
+    text-shadow: 0px 1px 5px #515151;
+}
+
+.heading {
+    display: flex;
+    margin-left: 20px;
+    margin-top: 20px;
+    font-family: Open Sans;
+    color: #ffffff;
+    font-weight: bold;
+    letter-spacing: 1px;
+    font-size: 55px;
+}
+
+.main-paragraph {
+    color: #ffffff;
+    font-family: Open Sans;
+    font-size: 16px;
+    font-weight: lighter;
+    display: flex;
+    margin-left: 20px;
+    line-height: 1.5;
+}
+
+.view-details-button {
+    display: flex;
+    margin-left: 20px;
+    background-color: rgba(255, 255, 255, 0);
+    font-family: Open Sans;
+    color: #ffffff;
+    border-radius: 28.5px;
+    padding: 5px 15px;
+    font-size: 1;
+}
+
+.footer-container {
+    display: flex;
+    flex-direction: row;
+    margin-left: 18px;
+    padding-top: 110px;
+    font-family: Open Sans;
+    font-weight: lighter;
+    justify-content: flex-start;
+}
+
+.flights {
+    background-color: rgba(255, 255, 255, 0.22);
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    margin-left: -15px;
+}
+
+.flights:hover {
+    background-color: transparent;
+}
+
+.flight-logo {
+    width: 130%;
+    position: relative;
+    right: 2px;
+    bottom: 2px;
+}
+
+.footer-paragraph {
+    color: #ffffff;
+    font-family: Open Sans;
+    font-size: 14px;
+    margin-left: 15px;
+}
+
+span {
+    font-weight: bold;
+}
+
+.flights2 {
+    background-color: rgba(255, 255, 255, 0.22);
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    margin-left: 25px;
+}
+
+.flight-logo2 {
+    width: 140%;
+    position: relative;
+    right: 2px;
+    bottom: 1px;
+}
+
+.flights2:hover {
+    background-color: transparent;
+}
+
+@media (max-width:1023px) {
+    .container.nav-bar.logo {
+        display: none;
+    }
+
+    .sidenav {
+        display: none;
+    }
+
+    .navigation-mobile {
+        display: flex;
+        background: transparent;
+    }
+}
+
+@media (min-width:1023px) {
+    .navigation-mobile {
+        display: none;
+    }
+}
+
+@media (max-width:1023px) {
+    .book-now-mobile {
+        display: flex;
+        position: relative;
+        left: 177px;
+        top: -36px;
+        background-color: #ffa70f;
+        font-family: Open Sans;
+        color: #ffffff;
+        border-radius: 28.5px;
+        padding: 5px 20px;
+    }
+}
+
+@media (min-width:1024px) {
+    .book-now-mobile {
+        display: none;
+    }
+}
+
+@media (max-width:1023px) {
+    .footer-icons {
+        display: flex;
+        flex-direction: row;
+        align-items: flex-end;
+    }
+}
+
+@media (min-width:1024px) {
+    .footer-icons {
+        display: none;
+    }
+}
+
+@media (max-width:1023px) {
+    .island-hopping {
+        font-size: 12px;
+    }
+
+    .heading {
+        font-size: 42px;
+    }
+
+    .main-paragraph {
+        font-size: 14px;
+    }
+}
+
+@media (max-width:767px) {
+    .main-paragraph {
+        font-size: 12px;
+        width: 100%;
+    }
+
+    .heading {
+        font-size: 38px;
+    }
+
+    .view-details-button {
+        font-size: 12px;
+    }
+
+    .book-now-mobile {
+        font-size: 12px;
+        position: relative;
+        top: -30px;
+        left: 151px;
+    }
+
+    .footer-paragraph {
+        font-size: 12px;
+    }
+}
+
+@media (max-width:639px) {
+    .island-hopping {
+        font-size: 10px;
+    }
+
+    .heading {
+        font-size: 36px;
+    }
+
+    .main-paragraph {
+        font-size: 10px;
+    }
+
+    .main-content {
+        width: 100%;
+        position: relative;
+        left: 1px;
+    }
+}
+
+@keyframes fadein {
+    from {
+        opacity: 0;
+    }
+
+    to {
+        opacity: 1;
+    }
+}
+
+@keyframes fadeBounce {
+    0% {
+        opacity: 0;
+        transform: translateX(-200%);
+    }
+
+    40% {
+        transform: translateX(0);
+    }
+
+    55% {
+        transform: translateX(-6px);
+    }
+
+    70% {
+        opacity: 1;
+        transform: translateX(0);
+    }
+
+    85% {
+        transform: translateX(-3px);
+    }
+
+    100% {
+        opacity: 1;
+        transform: translateX(0);
+    }
+}

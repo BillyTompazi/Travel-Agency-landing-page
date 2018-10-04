@@ -1,0 +1,112 @@
+html,
+body {
+    position: fixed;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    margin: 0;
+    padding: 0;
+    height: 100%;
+}
+
+body {
+    background-image: url("images/background.png");
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-position: center;
+}
+
+.sidenav {
+    height: 100%;
+    width: 220px;
+    position: fixed;
+    z-index: 1;
+    top: 0;
+    right: 0;
+    overflow-x: hidden;
+    padding-top: 20px;
+    background-image: url('images/side-nav.png');
+    background-size: cover;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.nav-bar {
+    width: 80%;
+    position: relative;
+    left: -125px;
+    display: flex;
+    color: #ffffff;
+    justify-content: space-between;
+}
+
+.logo {
+    display: flex;
+    color: #ffffff;
+    font-family: Source Serif Pro;
+    font-size: 24px;
+    font-weight: 600;
+    padding: 20px;
+    align-items: baseline;
+}
+
+.nav-link {
+    font-family: Open Sans;
+    color: #ffffff;
+    font-size: 16px;
+    display: flex;
+    align-items: baseline;
+    font-weight: 200;
+}
+
+.nav-link.email {
+    text-decoration: underline;
+}
+
+.book-now {
+    width: 150px;
+    height: 45px;
+    border-radius: 29px;
+    background-color: #ffa70f;
+    color: #ffffff;
+    font-size: 18px;
+    font-weight: 600;
+    border: none;
+    box-shadow: 0px 0.5px 6px 0.5px rgba(0, 0, 0, 0.30);
+    position: relative;
+    margin-top: 15px;
+    margin-bottom: 60px;
+}
+
+.sidenav-link {
+    font-family: Open Sans;
+    color: #ffffff;
+    font-weight: 200;
+    font-size: 16px;
+    text-shadow: 0px 1.5px 2px #515151;
+    margin-top: 35px;
+}
+
+.icon {
+    width: 15%;
+}
+
+.stories-link {
+    margin-bottom: 60px;
+}
+
+.social-link {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-top: 30px;
+}
+
+.main-content {
+    left: -125px;
+    position: relative;
+    width: 80%;
+}
